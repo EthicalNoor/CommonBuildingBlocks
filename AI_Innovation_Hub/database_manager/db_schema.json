@@ -1,0 +1,70 @@
+{
+    "schema_name": "your_schema_name_here",
+  
+    "tables": {
+      "your_table_name_here": {
+        "exists": true,
+  
+        "columns": {
+          "column_1": "DATA_TYPE CONSTRAINTS", 
+          "column_2": "DATA_TYPE CONSTRAINTS"
+        },
+  
+        "primary_key": {
+          "exists": true,
+          "columns": ["your_primary_key_column_here"]
+        },
+  
+        "foreign_keys": {
+          "exists": true,
+          "keys": {
+            "your_foreign_key_column_here": {
+              "references": "referenced_table(referenced_column)",
+              "cascade": {
+                "exists": true,
+                "on_delete": {
+                  "exists": true,
+                  "action": "CASCADE/SET NULL/RESTRICT/NO ACTION"
+                },
+                "on_update": {
+                  "exists": true,
+                  "action": "CASCADE/SET NULL/RESTRICT/NO ACTION"
+                }
+              }
+            }
+          }
+        },
+  
+        "indexes": {
+          "exists": true,
+          "columns": ["your_index_column_here"]
+        },
+  
+        "unique_constraints": {
+          "exists": true,
+          "columns": ["your_unique_column_here"]
+        },
+  
+        "check_constraints": {
+          "exists": true,
+          "conditions": [
+            "your_column_here > 0",
+            "your_other_column_here IN ('value1', 'value2')"
+          ]
+        },
+  
+        "not_null_constraints": {
+          "exists": true,
+          "columns": ["your_not_null_column_here"]
+        },
+  
+        "default_values": {
+          "exists": true,
+          "columns": {
+            "your_column_here": "DEFAULT your_default_value"
+          }
+        }
+      }
+    }
+  }
+  
