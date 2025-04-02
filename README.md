@@ -47,7 +47,8 @@ This project leverages a Git submodule to integrate common AI utilities. Below a
 To include the submodule in your repository, execute:
 
 ```bash
-git submodule add https://your.git.repo/path/to/ai-services.git path/to/submodule-directory
+git submodule add https://github.com/EthicalNoor/CommonBuildingBlocks.git CommonBuildingBlocks
+
 ```
 
 ---
@@ -82,7 +83,7 @@ This command fetches the latest commits from the submodule's tracked branch and 
 If the submodule has been updated, commit its changes in your main repository with:
 
 ```bash
-git add path/to/submodule-directory
+git add CommonBuildingBlocks
 git commit -m "Update submodule to latest version"
 ```
 
